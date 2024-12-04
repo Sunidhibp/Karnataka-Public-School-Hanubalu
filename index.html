@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karnataka Public School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo-title">
+            <img src="C:\Users\sunid\OneDrive\Projects\School\SCHOOLWEB\images\Karnataka_logo.jpg" alt="Karnataka Government Logo" class="logo">
+            <div>
+                <h1>Government of Karnataka,</h1>
+                <h2>Department of School Education, Sakaleshapura</h2>
+            </div>
+        </div>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#events">Events</a>
+            <a href="#infrastructure">Infrastructure</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+    
+
+
+
+    <!-- Hero Section -->
+<section id="hero">
+    <div class="hero-content">
+        <h2>Welcome to Karnataka Public School, Hanubalu</h2>
+        <p>Empowering students to achieve their full potential</p>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>Karnataka Public School, Hanubalu is committed to providing quality education and nurturing the leaders of tomorrow.</p>
+</section>
+
+<!-- Faculty Section -->
+<section id="faculty">
+    <h2>Our Faculty</h2>
+    <div class="faculty-container">
+        <!-- Add faculty details here -->
+        <div class="faculty-card">
+            <img src="C:\Users\sunid\OneDrive\Projects\School\SCHOOLWEB\images\faculty2.jpg" alt="Faculty 1">
+            <h3>Vanajakshi M.S</h3>
+            <p>headmistress</p>
+            <p>TCH, BA</p>
+        </div>
+        <div class="faculty-card">
+            <img src="C:\Users\sunid\OneDrive\Projects\School\SCHOOLWEB\images\faculty1.jpg" alt="Faculty 2">
+            <h3>Pramod Jeeval B L</h3>
+            <p>Assistant Teacher (GPT)</p>
+            <p>Msc B.Ed, ADCA</p>
+        </div>
+        <div class="faculty-card">
+            <img src="C:\Users\sunid\OneDrive\Projects\School\SCHOOLWEB\images\faculty3.jpg" alt="Faculty 1">
+            <h3>Y.T. Jayalakshmi</h3>
+            <p>Mathematics Teacher</p>
+            <p>PUC, TCH, BA</p>
+        </div>
+        <div class="faculty-card">
+            <img src="images/teacher1.jpg" alt="Faculty 1">
+            <h3>Mr. John Doe</h3>
+            <p>Mathematics Teacher</p>
+        </div>
+        <div class="faculty-card">
+            <img src="images/teacher1.jpg" alt="Faculty 1">
+            <h3>Mr. John Doe</h3>
+            <p>Mathematics Teacher</p>
+        </div>
+    </div>
+</section>
+
+   <!-- Events Section -->
+   <section id="events">
+    <h2>School Events</h2>
+    <div class="tabs">
+        <button class="tab-button active" onclick="showTab('english-fest', this)">English Fest</button>
+        <button class="tab-button" onclick="showTab('fancy-dress', this)">Fancy Dress</button>
+        <button class="tab-button" onclick="showTab('sports-event', this)">Sports Event</button>
+        <button class="tab-button" onclick="showTab('independence-day', this)">Independence Day</button>
+        <button class="tab-button" onclick="showTab('yoga-day', this)">Yoga Day</button>
+        <button class="tab-button" onclick="showTab('science-exhibition', this)">Science Exhibition</button>
+        <button class="tab-button" onclick="showTab('pratibha-karanji', this)">Pratibha Karanji</button>
+        <button class="tab-button" onclick="showTab('space-day', this)">Space Day</button>
+    </div>
+    <div class="tab-content" id="english-fest">
+        <div class="gallery">
+            <img src="images/english1.jpg" onclick="openLightbox(this.src)" alt="English Fest">
+            <img src="images/english2.jpg" onclick="openLightbox(this.src)" alt="English Fest">
+        </div>
+    </div>
+    <div class="tab-content" id="fancy-dress">
+        <div class="gallery">
+            <img src="images/fancy1.jpg" onclick="openLightbox(this.src)" alt="Fancy Dress">
+            <img src="images/fancy2.jpg" onclick="openLightbox(this.src)" alt="Fancy Dress">
+        </div>
+    </div>
+    <div class="tab-content" id="sports-event">
+        <div class="gallery">
+            <img src="images/sports1.jpg" onclick="openLightbox(this.src)" alt="Sports Event">
+            <img src="images/sports2.jpg" onclick="openLightbox(this.src)" alt="Sports Event">
+        </div>
+    </div>
+    <div class="tab-content" id="independence-day">
+        <div class="gallery">
+            <img src="images/independence1.jpg" onclick="openLightbox(this.src)" alt="Independence Day">
+        </div>
+    </div>
+    <div class="tab-content" id="yoga-day">
+        <div class="gallery">
+            <img src="images/yoga1.jpg" onclick="openLightbox(this.src)" alt="Yoga Day">
+        </div>
+    </div>
+    <div class="tab-content" id="science-exhibition">
+        <div class="gallery">
+            <img src="images/science1.jpg" onclick="openLightbox(this.src)" alt="Science Exhibition">
+        </div>
+    </div>
+    <div class="tab-content" id="pratibha-karanji">
+        <div class="gallery">
+            <img src="images/pratibha1.jpg" onclick="openLightbox(this.src)" alt="Pratibha Karanji">
+        </div>
+    </div>
+    <div class="tab-content" id="space-day">
+        <div class="gallery">
+            <img src="images/space1.jpg" onclick="openLightbox(this.src)" alt="Space Day">
+        </div>
+    </div>
+</section>
+
+<!-- Infrastructure Section -->
+<section id="infrastructure">
+    <h2>Our Infrastructure</h2>
+    <div class="tabs">
+        <button class="tab-button active" onclick="showTab('campus', this)">Campus</button>
+        <button class="tab-button" onclick="showTab('classroom', this)">Classroom</button>
+        <button class="tab-button" onclick="showTab('staff-room', this)">Staff Room</button>
+        <button class="tab-button" onclick="showTab('ground', this)">Ground</button>
+        <button class="tab-button" onclick="showTab('garden', this)">Garden</button>
+        <button class="tab-button" onclick="showTab('auditorium', this)">Auditorium</button>
+    </div>
+    <div class="tab-content" id="campus">
+        <div class="gallery">
+            <img src="images/campus1.jpg" onclick="openLightbox(this.src)" alt="Campus">
+        </div>
+    </div>
+    <div class="tab-content" id="classroom">
+        <div class="gallery">
+            <img src="images/classroom1.jpg" onclick="openLightbox(this.src)" alt="Classroom">
+        </div>
+    </div>
+    <div class="tab-content" id="staff-room">
+        <div class="gallery">
+            <img src="images/staff1.jpg" onclick="openLightbox(this.src)" alt="Staff Room">
+        </div>
+    </div>
+    <div class="tab-content" id="ground">
+        <div class="gallery">
+            <img src="images/ground1.jpg" onclick="openLightbox(this.src)" alt="Ground">
+        </div>
+    </div>
+    <div class="tab-content" id="garden">
+        <div class="gallery">
+            <img src="images/garden1.jpg" onclick="openLightbox(this.src)" alt="Garden">
+        </div>
+    </div>
+    <div class="tab-content" id="auditorium">
+        <div class="gallery">
+            <img src="images/auditorium1.jpg" onclick="openLightbox(this.src)" alt="Auditorium">
+        </div>
+    </div>
+</section>
+
+
+<!-- Lightbox Modal -->
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<!-- Contact Us Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Login Section -->
+<section id="login">
+    <h2>Login</h2>
+    <form id="login-form">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
